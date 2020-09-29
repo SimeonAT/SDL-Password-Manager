@@ -1,5 +1,4 @@
-/* A blank window template program for SDL 2. I made this so you don't have to keep on rewriting
-   the code to get started with SDL 2 (since it can be kind of tedious). */
+/* The main program manages the graphical interface of the password manager. */
 #include <iostream>
 #include <SDL.h>
 #include <string>
