@@ -3,8 +3,8 @@
 #include <SDL.h>
 #include <string>
 
-int SCREEN_WIDTH;
-int SCREEN_HEIGHT;
+int SCREEN_WIDTH = 1280;
+int SCREEN_HEIGHT = 960;
 
 SDL_Window* Window = NULL;  // window to render to  
 SDL_Surface* ScreenSurface = NULL;  // SDL Surface attached to Window 
@@ -49,13 +49,6 @@ void close() {
 
 
 int main(int argc, char* args[]) {
-	/* --- GET USER INPUT --- */
-	std::cout << "Enter the width of the screen: " << std::endl;
-	std::cin >> SCREEN_WIDTH;
-	std::cout << std::endl;  // separate the sections of text 
-	std::cout << "Enter the height of the screen: " << std::endl;
-	std::cin >> SCREEN_HEIGHT;
-
 	init();  // Initialize our Window 
 
 	SDL_Event current_event;  // the most current event in queue 
