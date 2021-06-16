@@ -49,6 +49,16 @@ void close() {
 int main(void) {
   init();
 
+  bool quit = false;
+  SDL_Event event;
+  while (!quit) {
+    while (SDL_PollEvent(&event) != 0) {
+      if (event.type == SDL_QUIT) {
+        quit = true;
+      }
+    }
+  }
+
   close();
   return 0;
 }
