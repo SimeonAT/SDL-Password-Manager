@@ -16,7 +16,7 @@ clean:
 	rm -f $(EXECBIN) $(wildcard *.o)
 
 valgrind:
-	valgrind --leak-check=full --show-leak-kinds=all -s ./$(EXECBIN)
+	valgrind --leak-check=full --show-reachable=yes --show-leak-kinds=all ./$(EXECBIN)
 
 format:
 	clang-format -i $(FILE)
