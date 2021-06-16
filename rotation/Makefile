@@ -1,5 +1,5 @@
 CC = clang++ 
-CFLAGS = -Wall -Werror -Wextra -Wpedantic 
+CFLAGS = -Wall -Werror -Wextra -Wpedantic -I/usr/include/SDL2
 LINKER = -lSDL2 -lSDL2_image 
 EXECBIN = rotation
 FILE = $(EXECBIN).cpp 
